@@ -13,6 +13,7 @@ public class AccountController {
     }else{
       ApexPages.Message msg = new ApexPages.Message(ApexPages.Severity.ERROR, 'The Account ID is invalid.');
       ApexPages.addMessage(msg);
+      ApexPages.addMessage('This is new Error Message : '+msg);
     }
   }
  /* */
